@@ -482,8 +482,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .mx-5 {
@@ -531,6 +547,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 30px;
 }
 
+.mt-16px {
+  margin-top: 16px;
+}
+
 .block {
   display: block;
 }
@@ -543,6 +563,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-max {
   height: -webkit-max-content;
   height: max-content;
@@ -550,6 +574,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full {
   height: 100%;
+}
+
+.h-300px {
+  height: 300px;
+}
+
+.h-40px {
+  height: 40px;
 }
 
 .h-50px {
@@ -580,16 +612,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 30px;
 }
 
-.h-960px {
-  height: 960px;
+.h-200px {
+  height: 200px;
 }
 
-.h-40px {
-  height: 40px;
+.h-80px {
+  height: 80px;
 }
 
-.h-300px {
-  height: 300px;
+.h-24px {
+  height: 24px;
 }
 
 .min-h-screen {
@@ -602,6 +634,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100%;
+}
+
+.w-300px {
+  width: 300px;
 }
 
 .w-12px {
@@ -636,12 +672,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 120px;
 }
 
-.w-300px {
-  width: 300px;
+.w-800px {
+  width: 800px;
 }
 
 .w-150px {
   width: 150px;
+}
+
+.w-100px {
+  width: 100px;
+}
+
+.w-24px {
+  width: 24px;
+}
+
+.w-\[112px\] {
+  width: 112px;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-\[calc\(100\%-2rem\)\] {
+  width: calc(100% - 2rem);
+}
+
+.w-\[calc\(100\%-\$\{30\}\%\)\] {
+  width: calc(100% - ${30}%);
 }
 
 .flex-shrink-0 {
@@ -669,6 +729,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .resize-none {
   resize: none;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -705,6 +773,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-60px {
   gap: 60px;
+}
+
+.gap-x-28px {
+  -webkit-column-gap: 28px;
+          column-gap: 28px;
+}
+
+.gap-y-20px {
+  row-gap: 20px;
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
@@ -765,8 +842,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 25px;
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.rounded-8px {
+  border-radius: 8px;
 }
 
 .rounded-t-10px {
@@ -787,6 +864,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 0;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
 .border-none {
   border-style: none;
 }
@@ -799,6 +884,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
 .bg-bg_blue {
@@ -847,6 +937,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .to-blue-500 {
   --tw-gradient-to: #0ea5e9;
+}
+
+.object-contain {
+  object-fit: contain;
 }
 
 .object-cover {
@@ -904,6 +998,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-30px {
   padding-bottom: 30px;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .align-middle {
@@ -1067,6 +1165,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+.w-20\% {
+  width: 20%;
+}
+
+.w-70\% {
+  width: 70%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -1110,6 +1216,11 @@ code {
 .hover\:bg-blue-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
 }
 
 .hover\:shadow-light:hover {

@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const  percentageWidth = require('tailwindcss-percentage-width');
 
 module.exports = {
   content: [
@@ -311,5 +312,7 @@ module.exports = {
 			}
 		},
 	},
-  plugins: [],
+  plugins: [
+	percentageWidth,
+  ],
 };

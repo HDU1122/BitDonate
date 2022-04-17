@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import reasonsList from "../lib/reasons.js";
 
 export default function PostPreview({ postId }) {
@@ -8,7 +8,7 @@ export default function PostPreview({ postId }) {
     const cause = reasonsList.medical
     const description = "Lorem Ipsum is simply dummy text of the printing and typesettiny dummy text of the printing and typesettiny dummy text of the printing and typesettiny dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into..."
     const donateTot = 100
-    const donateCur = 30
+    const donateCur = 80
 
     return (
         <div className="flex flex-col justify-between rounded-10px border-0.5px border-gray-400 w-400px h-400px hover:border-none hover:shadow-light">
@@ -24,7 +24,7 @@ export default function PostPreview({ postId }) {
                     {description}
                 </div>
             </div>
-            <DonationBar current={donateCur} total={donateTot} />
+            <DonationBar current={donateCur} total={donateTot}/>
         </div>
     )
 }
@@ -39,15 +39,13 @@ function Cause({ cause }) {
 }
 function DonationBar({ current, total }) {
 
-    // useEffect(() => {
-    //     console.log("rerender")
-    //     parseInt(current / total * 400)
-    // }, [])
+    useEffect(() => {
+    }, [])
 
     return (
         <div className="relative flex-shrink-0 flex flex-row h-30px rounded-b-10px overflow-clip">
             <div className="absolute w-full h-full flex justify-center items-center text-white text-12px font-semibold">{current} / {total}</div>
-            <div className="flex-shrink-0 bg-gold w-[120px]"></div>
+            <div className="flex-shrink-0 bg-gold"  style={{ width: `${parseInt(current/total*100)}%` }}></div>
             <div className="bg-lightgold w-full"></div>
         </div>
     )
