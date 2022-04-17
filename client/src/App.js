@@ -8,6 +8,7 @@ import Navbar from "./components/navbar.js";
 
 import PageHome from "./pages/PageHome";
 import CreateDonate from "./pages/PageCreateDonate";
+import PagePostIndex from "./pages/PagePost";
 
 import "./style.css";
 
@@ -68,7 +69,7 @@ class App extends Component {
               <Routes>
                 <Route path="/" element={<PageHome />} />
                 <Route path="/create" element={<CreateDonate />} />
-                <Route path="/post/*" element={<div>Page Post</div>} />
+                <Route path="/post/*" element={<PagePostIndex />} />
                 <Route path="*" element={<div>404 Not Found</div>} />
               </Routes>
             </Suspense>
