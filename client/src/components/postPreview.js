@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import reasonsList from "../lib/reasons.js";
+import { Link } from "react-router-dom";
 
 export default function PostPreview({ postId }) {
 
@@ -11,21 +12,24 @@ export default function PostPreview({ postId }) {
     const donateCur = 80
 
     return (
-        <div className="flex flex-col justify-between rounded-10px border-0.5px border-gray-400 w-400px h-400px hover:border-none hover:shadow-light">
-            <img id="img" className="flex-shrink-0 w-full h-[180px] object-cover overflow-hidden border-none rounded-t-10px" src={imgUrl} />
-            <div id='info' className="px-25px h-full">
-                <div id="meta" className="flex justify-between item-baseline pt-15px pb-5px">
-                    <div id="name" className="text-gray-600 text-18px font-medium">
-                        {name}
+        <Link to={"/post/" + postId}>
+            <div className="flex flex-col justify-between rounded-10px border-0.5px border-gray-400 w-400px h-400px hover:border-none hover:shadow-light">
+                <img id="img" className="flex-shrink-0 w-full h-[180px] object-cover overflow-hidden border-none rounded-t-10px" src={imgUrl} />
+                <div id='info' className="px-25px h-full">
+                    <div id="meta" className="flex justify-between item-baseline pt-15px pb-5px">
+                        <div id="name" className="text-gray-600 text-18px font-medium">
+                            {name}
+                        </div>
+                        <Cause cause={cause} />
                     </div>
-                    <Cause cause={cause} />
+                    <div id="description" className="h-[130px] text-14px text-gray-400 font-normal overflow-hidden">
+                        {description}
+                    </div>
                 </div>
-                <div id="description" className="h-[130px] text-14px text-gray-400 font-normal overflow-hidden">
-                    {description}
-                </div>
+                <DonationBar current={donateCur} total={donateTot}/>
             </div>
-            <DonationBar current={donateCur} total={donateTot}/>
-        </div>
+        </Link>
+        
     )
 }
 

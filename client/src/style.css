@@ -466,6 +466,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -488,6 +492,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .top-0 {
   top: 0px;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.right-10 {
+  right: 2.5rem;
 }
 
 .z-10 {
@@ -557,6 +573,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-16px {
   margin-top: 16px;
+}
+
+.mr-20px {
+  margin-right: 20px;
+}
+
+.mr-30px {
+  margin-right: 30px;
 }
 
 .block {
@@ -726,6 +750,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-700px {
   width: 700px;
+}
+
+.w-max {
+  width: -webkit-max-content;
+  width: max-content;
+}
+
+.w-200px {
+  width: 200px;
 }
 
 .flex-shrink-0 {
@@ -910,6 +943,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 2px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -940,6 +977,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-gold {
+  --tw-border-opacity: 1;
+  border-color: rgb(241 174 0 / var(--tw-border-opacity));
 }
 
 .bg-bg_blue {
@@ -1028,6 +1070,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 25px;
 }
 
+.px-20px {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-30px {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .pb-100px {
   padding-bottom: 100px;
 }
@@ -1094,6 +1146,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[20px\] {
   font-size: 20px;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
 }
 
 .font-semibold {
@@ -1168,6 +1224,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-gold {
+  --tw-text-opacity: 1;
+  color: rgb(241 174 0 / var(--tw-text-opacity));
 }
 
 .placeholder-gray-300::-webkit-input-placeholder {
@@ -1308,6 +1369,21 @@ code {
 .hover\:bg-blue-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(224 242 254 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-lightgold:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 231 177 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gold:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 174 0 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-light:hover {

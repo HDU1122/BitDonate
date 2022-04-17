@@ -27,17 +27,16 @@ export default function PostDetail() {
                         ))}
                     </div>
                 </div>
+            </div>
+            <div  id="right" className="w-full flex flex-col space-y-20px">
+                <div id="title" className="text-gray-600 text-[30px] font-semibold">
+                    {title}
+                </div>
                 <div id="des" className="w-600px h-max">
                     <div className="text-gray-700 text-[20px] font-medium">Description</div>
                     {description}
                 </div>
-            </div>
-            <div  id="right" className="w-full">
-                <div id="title" className="text-gray-600 text-[30px] font-semibold">
-                    {title}
-                </div>
-                <div className="flex flex-col space-y-5px">
-                    <div className="text-gray-700 text-[20px] font-medium">Donation Process</div>
+                <div className="fixed bottom-5 right-10 flex flex-col space-y-5px">
                     <Donate current={donateCur} total={donateTot}/>
                 </div>
                 
@@ -62,13 +61,16 @@ function ImageTile(props) {
   }
 
   function Donate({ current, total }) {
+      function handleDonate() {}
         return (
-            <div>
-                <div className="relative flex-shrink-0 flex flex-row h-80px rounded-10px overflow-clip">
-                    <div className="absolute w-full h-full hidden hover:flex justify-center items-center text-white text-[20px] font-bold bg-red-100">Donate</div>
-                    <div className="absolute w-full h-full flex justify-center items-center text-white text-[20px] font-bold hover:hidden">{current} / {total}</div>
+            <div className="flex flex-row w-full">
+                <div className="relative flex-shrink-0 flex flex-row w-500px h-80px rounded-10px overflow-clip mr-30px">                    
+                <div className="absolute w-full h-full flex justify-center items-center text-white text-[20px] font-bold">{current} / {total}</div>
                     <div className="flex-shrink-0 bg-gold"  style={{ width: `${parseInt(current/total*100)}%` }}></div>
                     <div className="bg-lightgold w-full"></div>
+                </div>
+                <div onClick={() => handleDonate()} className="h-80px w-max flex justify-center items-center px-30px border border-gold rounded-10px text-gold text-[22px] text-semibold hover:bg-gold hover:text-white">
+                    Donate
                 </div>
             </div>
         )

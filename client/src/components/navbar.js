@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Web3 from 'web3';
-import { ethers } from "ethers";
 
 export default function Navbar() {
+    let navigate = useNavigate();
 
-    function search() {}
+    function search() {
+        navigate("/post/"+searchValue)
+    }
 
     const [searchValue, setSearchValue] = useState("");
     return (
