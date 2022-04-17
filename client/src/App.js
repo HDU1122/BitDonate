@@ -7,6 +7,7 @@ import getWeb3 from "./getWeb3";
 import Navbar from "./components/navbar.js";
 
 import PageHome from "./pages/PageHome";
+import CreateDonate from "./pages/PageCreateDonate";
 
 import "./style.css";
 
@@ -66,6 +67,7 @@ class App extends Component {
             <Suspense fallback={<div>Loading...</div>}>
               <Routes>
                 <Route path="/" element={<PageHome />} />
+                <Route path="/create" element={<CreateDonate />} />
                 <Route path="/post/*" element={<div>Page Post</div>} />
                 <Route path="*" element={<div>404 Not Found</div>} />
               </Routes>

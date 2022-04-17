@@ -35,7 +35,7 @@ export default function Navbar() {
 
 function AskDonate() {
     return (
-        <Link to="/askdonate">
+        <Link to="/create">
             <div className='flex justify-center items-center w-[150px] h-50px rounded-10px bg-blue-300 text-16px text-white font-semibold leading-none hover:bg-blue-200'>Ask Donate</div>
         </Link>
     )
