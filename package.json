@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.6",
+    "babel-register": "^6.26.0"
+  }
+}

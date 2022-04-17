@@ -1,0 +1,71 @@
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Starting migrations...
+======================
+> Network name:    'ropsten'
+> Network id:      3
+> Block gas limit: 8015630 (0x7a4f0e)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x3c151fe1cb710b14d3ca73b821595b7929e152c0b7d44f0b9b71c6d71d93ff3d
+   > Blocks: 0            Seconds: 57
+   > contract address:    0x18bd47C9862580609Fdaf23216Af6Bb4D31D3151
+   > block number:        12201624
+   > block timestamp:     1650194306
+   > account:             0xA773daD3B178cCFB50141e78B3F72EF855eB8044
+   > balance:             0.499492742496347746
+   > gas used:            202903 (0x31897)
+   > gas price:           2.500000018 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000507257503652254 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 12201625)
+   > confirmation number: 2 (block: 12201626)
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.000507257503652254 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'Donation'
+   --------------------
+   > transaction hash:    0x7dfd3214a6887d95869988dad24c84f338137752602cb48e6ab6663d4b09a7fb
+   > Blocks: 1            Seconds: 13
+   > contract address:    0xe214107A334f9bAEde0889Cd3631d2ADA0803958
+   > block number:        12201628
+   > block timestamp:     1650194453
+   > account:             0xA773daD3B178cCFB50141e78B3F72EF855eB8044
+   > balance:             0.496810467479135273
+   > gas used:            1026997 (0xfabb5)
+   > gas price:           2.500000016 gwei
+   > value sent:          0 ETH
+   > total cost:          0.002567492516431952 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 12201629)
+   > confirmation number: 2 (block: 12201630)
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.002567492516431952 ETH
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.003074750020084206 ETH
