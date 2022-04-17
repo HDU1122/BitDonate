@@ -1000,6 +1000,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 30px;
 }
 
+.pt-2px {
+  padding-top: 2px;
+}
+
+.pt-10px {
+  padding-top: 10px;
+}
+
+.pl-10px {
+  padding-left: 10px;
+}
+
 .text-left {
   text-align: left;
 }

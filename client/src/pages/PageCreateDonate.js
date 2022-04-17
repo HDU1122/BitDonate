@@ -120,8 +120,11 @@ function UploadImage(props) {
     return (
         <div className="relative w-24px h-24px">
             <input type="file" onChange={(event) => props.handleUploadImage(event)} multiple className="absolute block opacity-0 z-20 w-24px h-24px left-0 top-0" />
-            <div className="absolute flex justify-center items-center z-0 w-24px h-24px left-0 top-0">
-                +
+            <div className="absolute z-0 w-24px h-24px left-0 top-0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 11.5239H22" stroke="#9CA3AF" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M12 22L12 2" stroke="#9CA3AF" stroke-width="3" stroke-linecap="round"/>
+                </svg>
             </div>
         </div>
     )
