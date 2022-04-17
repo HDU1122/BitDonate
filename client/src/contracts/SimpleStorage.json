@@ -38,7 +38,11 @@
   "sourceMap": "67:176:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;67:176:1;;;;;;;",
   "deployedSourceMap": "67:176:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;67:176:1;;;;;;;;;;;;;;;;;;;;;;;;114:53;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;114:53:1;;;;;;;;;;;;;;;;;:::i;:::-;;171:70;;;:::i;:::-;;;;;;;;;;;;;;;;;;;114:53;161:1;148:10;:14;;;;114:53;:::o;171:70::-;207:4;226:10;;219:17;;171:70;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <8.10.0;\n\ncontract SimpleStorage {\n  uint storedData;\n\n  function set(uint x) public {\n    storedData = x;\n  }\n\n  function get() public view returns (uint) {\n    return storedData;\n  }\n}\n",
+<<<<<<< HEAD
   "sourcePath": "/Users/bobxia/Desktop/Sping 22/HACKATHON/BitFund/contracts/SimpleStorage.sol",
+=======
+  "sourcePath": "/home/hongzhe/BitFund/contracts/SimpleStorage.sol",
+>>>>>>> 39a2d17a49bc0a5dc288380060e0477c070a2d6c
   "ast": {
     "absolutePath": "project:/contracts/SimpleStorage.sol",
     "exportedSymbols": {
@@ -601,12 +605,21 @@
     "5777": {
       "events": {},
       "links": {},
+<<<<<<< HEAD
       "address": "0x85dBBB68d493dDBd6cF1874C928e1069fA9C41F8",
       "transactionHash": "0x05899df3f57434e3cae9243f1a1eaf3f7c29977f6c70c2be5bd7dbb21c8ffe44"
     }
   },
   "schemaVersion": "3.4.7",
   "updatedAt": "2022-04-17T06:32:50.274Z",
+=======
+      "address": "0x9df3dD5c4c9364cA9Fe9F810480983b878DeDBDa",
+      "transactionHash": "0x5dfd3a1594c604d9cbd96046e61d03c6cd6bfbaeb687fa970ed2bcc1bec64791"
+    }
+  },
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-04-17T06:13:35.859Z",
+>>>>>>> 39a2d17a49bc0a5dc288380060e0477c070a2d6c
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

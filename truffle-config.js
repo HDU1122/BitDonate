@@ -10,5 +10,11 @@ module.exports = {
       port: 7545,            // Ganache RPC server port
       network_id: 5777,      // Ganache network ID
     },
+
+  },
+  compilers: {
+    solc: {
+      version: "0.8.13"
+    }
   }
 };
