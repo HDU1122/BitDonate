@@ -1,8 +1,14 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import SimpleStorageContract from "./contracts/SimpleStorage.json";
 import getWeb3 from "./getWeb3";
 
-import "./App.css";
+import Navbar from "./components/navbar.js";
+
+import PageHome from "./pages/PageHome";
+
+import "./style.css";
 
 class App extends Component {
   state = { storageValue: 0, web3: null, accounts: null, contract: null };
@@ -53,18 +59,19 @@ class App extends Component {
       return <div>Loading Web3, accounts, and contract...</div>;
     }
     return (
-      <div className="App">
-        <h1>Good to Go!</h1>
-        <p>Your Truffle Box is installed and ready.</p>
-        <h2>Smart Contract Example</h2>
-        <p>
-          If your contracts compiled and migrated successfully, below will show
-          a stored value of 5 (by default).
-        </p>
-        <p>
-          Try changing the value stored on <strong>line 42</strong> of App.js.
-        </p>
-        <div>The stored value is: {this.state.storageValue}</div>
+      <div className="flex flex-row justify-center bg-bg_blue min-h-screen h-max">
+        <div className="w-[1320px] pb-100px flex flex-col items-center">
+          <Router>
+            <Navbar />
+            <Suspense fallback={<div>Loading...</div>}>
+              <Routes>
+                <Route path="/" element={<PageHome />} />
+                <Route path="/post/*" element={<div>Page Post</div>} />
+                <Route path="*" element={<div>404 Not Found</div>} />
+              </Routes>
+            </Suspense>
+          </Router>
+        </div>
       </div>
     );
   }
