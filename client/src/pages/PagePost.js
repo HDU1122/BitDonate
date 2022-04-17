@@ -19,9 +19,7 @@ function PagePosts() {
 function PagePost() {
     let { id } = useParams();
     return (
-        <div>
-            <div className="flex flex-col justify-center items-center">
+            <div className="w-full flex flex-col justify-center items-center">
                 <PostDetail id={id} />
-            </div>
-        </div>)
+            </div>)
 }

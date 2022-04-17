@@ -575,6 +575,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-max {
   height: -webkit-max-content;
   height: max-content;
@@ -716,6 +720,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 112px;
 }
 
+.w-500px {
+  width: 500px;
+}
+
+.w-700px {
+  width: 700px;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -818,6 +830,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(50px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(50px * var(--tw-space-y-reverse));
+}
+
+.space-x-20px > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(20px * var(--tw-space-x-reverse));
+  margin-left: calc(20px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-20px > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(20px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(20px * var(--tw-space-y-reverse));
+}
+
+.space-y-5px > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(5px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(5px * var(--tw-space-y-reverse));
 }
 
 .overflow-auto {
@@ -947,6 +977,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(252 231 177 / var(--tw-bg-opacity));
 }
 
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1053,6 +1088,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 12px;
 }
 
+.text-\[26px\] {
+  font-size: 26px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1063,6 +1106,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .leading-none {
@@ -1111,6 +1158,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .placeholder-gray-300::-webkit-input-placeholder {
@@ -1208,6 +1265,18 @@ code {
   font-size: 12px;
 }
 
+.hover\:block:hover {
+  display: block;
+}
+
+.hover\:flex:hover {
+  display: flex;
+}
+
+.hover\:hidden:hover {
+  display: none;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -1226,6 +1295,11 @@ code {
   background-color: rgb(240 249 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-blue-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 230 253 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-blue-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
@@ -1234,11 +1308,6 @@ code {
 .hover\:bg-blue-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(224 242 254 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-blue-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(186 230 253 / var(--tw-bg-opacity));
 }
 
 .hover\:shadow-light:hover {
