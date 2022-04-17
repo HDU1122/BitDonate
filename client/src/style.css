@@ -1231,6 +1231,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(241 174 0 / var(--tw-text-opacity));
 }
 
+.text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
+.text-lightgold {
+  --tw-text-opacity: 1;
+  color: rgb(252 231 177 / var(--tw-text-opacity));
+}
+
 .placeholder-gray-300::-webkit-input-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(209 213 219 / var(--tw-placeholder-opacity));

@@ -8,6 +8,7 @@ export default function CreateDonate() {
     const reasons = ["medical", "poverty", "war", "food"]
 
     const [title, setTitleState] = useState("");
+    const [totalAmount, setTotalAmount] = useState(0)
     const [description, setDescriptionState] = useState("");
     const [reason, setReasonState] = useState(reasons[0]);
 
@@ -66,10 +67,18 @@ export default function CreateDonate() {
             <div className="w-full h-max bg-white pt-35px pr-25px pl-25px pb-30px rounded-25px space-y-50px">
                 <Form id="title"
                     label="Title"
-                    placeholder="Name of the item"
+                    placeholder="Brief summary of reason"
                     value={title}
                     onChange={(event) => setTitleState(event.target.value)}
                     type="text"
+                    width={750}
+                    required={true} />
+                <Form id="amount"
+                    label="Amount Needed"
+                    placeholder="Amount of donation needed"
+                    value={totalAmount}
+                    onChange={(event) => setTotalAmount(event.target.value)}
+                    type="number"
                     width={750}
                     required={true} />
                 <Form id="reason"

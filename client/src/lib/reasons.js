@@ -3,7 +3,7 @@ import React from "react"
 export default {
     medical: {
         name: "medical",
-        color: "red-400",
+        color: "text-red-400",
         icon: 
         (
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +13,7 @@ export default {
     },
     poverty: {
         name: "poverty",
-        color: "gold",
+        color: "text-gold",
         icon: 
         (
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@ export default {
     },
     war: {
         name: "war",
-        color: "grey-400",
+        color: "text-grey-400",
         icon: 
         (
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@ export default {
     },
     food: {
         name: "food",
-        color: "lightgold",
+        color: "text-lightgold",
         icon: 
         (
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

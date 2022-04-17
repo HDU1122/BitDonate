@@ -64,7 +64,7 @@ function ImageTile(props) {
       function handleDonate() {}
         return (
             <div className="flex flex-row w-full">
-                <div className="relative flex-shrink-0 flex flex-row w-500px h-80px rounded-10px overflow-clip mr-30px">                    
+                <div className="relative flex-shrink-0 flex flex-row w-600px h-80px rounded-10px overflow-clip mr-30px">                    
                 <div className="absolute w-full h-full flex justify-center items-center text-white text-[20px] font-bold">{current} / {total}</div>
                     <div className="flex-shrink-0 bg-gold"  style={{ width: `${parseInt(current/total*100)}%` }}></div>
                     <div className="bg-lightgold w-full"></div>

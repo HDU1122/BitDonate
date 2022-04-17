@@ -42,7 +42,7 @@ export default function Navbar() {
 function AskDonate() {
     return (
         <Link to="/create">
-            <div className='flex justify-center items-center w-[150px] h-50px rounded-10px bg-blue-300 text-16px text-white font-semibold leading-none hover:bg-blue-50'>Ask Donate</div>
+            <div className='flex justify-center items-center w-[150px] h-50px rounded-10px bg-blue-300 text-16px text-white font-semibold leading-none hover:bg-blue-100'>Ask Donate</div>
         </Link>
     )
 }
@@ -62,6 +62,7 @@ function ConnectToWallet() {
             window.ethereum.request({ method: "eth_requestAccounts" })
             web3 = new Web3(window.ethereum)
             setWalletConnected(true);
+            console.log(web3)
         } else {
             console.log("error")
         }
@@ -108,7 +109,7 @@ function ConnectToWallet() {
     //     // Setting a balance
     //     getbalance(account);
     // };
-        if (walletConnected){
+        if (!walletConnected){
             return(
                 <button onClick={() => handleConnect()}>
                     <div className='flex flex-row items-center justify-center w-[180px] h-50px rounded-10px bg-blue-400 space-x-[5px] hover:bg-blue-200'>
